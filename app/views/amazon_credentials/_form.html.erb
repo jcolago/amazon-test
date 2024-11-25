@@ -1,0 +1,37 @@
+<%= form_with(model: amazon_credential) do |form| %>
+  <% if amazon_credential.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(amazon_credential.errors.count, "error") %> prohibited this amazon_credential from being saved:</h2>
+
+      <ul>
+        <% amazon_credential.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :access_token, style: "display: block" %>
+    <%= form.text_field :access_token %>
+  </div>
+
+  <div>
+    <%= form.label :string, style: "display: block" %>
+    <%= form.text_field :string %>
+  </div>
+
+  <div>
+    <%= form.label :refresh_token, style: "display: block" %>
+    <%= form.text_field :refresh_token %>
+  </div>
+
+  <div>
+    <%= form.label :string, style: "display: block" %>
+    <%= form.text_field :string %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

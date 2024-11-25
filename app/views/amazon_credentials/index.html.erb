@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Amazon credentials" %>
+
+<h1>Amazon credentials</h1>
+
+<div id="amazon_credentials">
+  <% @amazon_credentials.each do |amazon_credential| %>
+    <%= render amazon_credential %>
+    <p>
+      <%= link_to "Show this amazon credential", amazon_credential %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New amazon credential", new_amazon_credential_path %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @amazon_credential %>
+
+<div>
+  <%= link_to "Edit this amazon credential", edit_amazon_credential_path(@amazon_credential) %> |
+  <%= link_to "Back to amazon credentials", amazon_credentials_path %>
+
+  <%= button_to "Destroy this amazon credential", @amazon_credential, method: :delete %>
+</div>

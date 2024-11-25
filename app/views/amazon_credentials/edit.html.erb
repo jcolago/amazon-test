@@ -1,0 +1,12 @@
+<% content_for :title, "Editing amazon credential" %>
+
+<h1>Editing amazon credential</h1>
+
+<%= render "form", amazon_credential: @amazon_credential %>
+
+<br>
+
+<div>
+  <%= link_to "Show this amazon credential", @amazon_credential %> |
+  <%= link_to "Back to amazon credentials", amazon_credentials_path %>
+</div>

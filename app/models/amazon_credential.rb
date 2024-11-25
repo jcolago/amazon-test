@@ -1,0 +1,2 @@
+class AmazonCredential < ApplicationRecord
+end
